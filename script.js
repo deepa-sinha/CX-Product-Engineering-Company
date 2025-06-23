@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const navListItems = mainNavLinks.querySelectorAll('.flex-center li');
         navListItems.forEach(item => {
             item.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
+                if (window.innerWidth <= 1000) {
                     mainNavLinks.classList.remove('show');
                     navbarToggler.classList.remove('active');
                 }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const contactButton = mainNavLinks.querySelector('.nav_btn .btn');
         if (contactButton) {
             contactButton.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
+                if (window.innerWidth <= 1000) {
                     mainNavLinks.classList.remove('show');
                     navbarToggler.classList.remove('active');
                 }
