@@ -1148,6 +1148,17 @@ header {
 }
 
 @media (max-width: 500px) {
+    nav {
+        .logo {
+            padding-top: 0;
+
+            img {
+                width: 5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+
     header {
         padding: 0;
         display: flex;
@@ -1159,7 +1170,7 @@ header {
             padding: 2rem 0 2rem 1rem;
 
             h1 {
-                font-size: 2rem;
+                font-size: 3rem;
 
                 span {
                     width: 3rem;
@@ -1168,7 +1179,7 @@ header {
                 }
             }
             h2 {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
             .btn-wraper {
                 flex-direction: column-reverse;
@@ -1178,19 +1189,24 @@ header {
                 h2 {
                     font-size: 1.5rem;
                 }
+                .btn {
+                    padding: .8rem 1.5rem;
+                    font-size: .9rem;
+                }
             }
         }
 
         .header-right {
-            flex: 1;
-            padding-right: 1rem;
+            width: 100%;
+            scale: .8;
         }
 
         .reviews {
             width: 100%;
             justify-content: center;
-            margin-top: -30px;
+            margin-top: 2rem;
             padding-right: 1rem;
+            gap: 1rem;
 
             img {
                 width: 2rem;
@@ -1212,8 +1228,11 @@ header {
             .brand-section {
                 margin-top: 1.5rem;
                 width: 100%;
+                flex-wrap: wrap;
+
                 .brand {
-                    flex: 1;
+                    height: 3rem;
+
                     img {
                         width: 50%;
                     }
@@ -1222,10 +1241,50 @@ header {
         }
     }
 
-    .services {
-        .services-content {
-            padding: 2rem;
+    .sub-heading {
+        width: 20rem;
+        height: 2.5rem;
+    
+        .heading-left {
+            font-size: 1.5rem;
+        }
+    
+        .circle {
+            width: 2.4rem;
+            height: 2.3rem;
+            padding: 0;
+            margin: 0.1rem .1rem;
 
+            svg {
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+        }
+    }
+
+    .services {
+        margin-top: 2.5rem;
+        .services-content {
+            padding: 0 2rem;
+            margin-top: 2rem;
+            width: 100%;
+    
+            .accordions {
+                .accordion-products {
+                    .product-heading {
+                        h5 {
+                            font-size: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                        
+                    }
+                    .product-description {
+                        font-size: .7rem;
+                        line-height: 116%;
+                    }
+                }
+            }
+    
             .accordions-img {
                 display: none;
             }
@@ -1236,31 +1295,34 @@ header {
         .icon-box-container {
             padding: 2rem 1rem 1rem 2rem;
             flex-direction: column;
-            align-items: start;
+            align-items: center;
             .icon-box-wrapper {
+                width: 100%;
+                margin-bottom: 2rem;
+
                 .icon-box-num {
-                    font-size: 3.5rem;
-                    transform: rotateX(30deg) rotateY(310deg) rotateZ(345deg) translate3d(-30px, 60px, 15px);
+                    font-size: 2.5rem;
+                    transform: rotateX(30deg) rotateY(337deg) rotateZ(345deg) translate3d(-14px, -52px, 8px);
                 }
                 .icon-box-holder {
-                    width: 12rem;
-                    height: 12rem;
+                    width: 7rem;
+                    height: 7rem;
 
                     svg {
-                        width: 5rem;
+                        width: 3rem;
                     }
                 }
                 .icon-box-heading {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
                 .icon-line {
-                    width: 90%;
-                    height: 2px;
+                    width: 20%;
+                    height: 1px;
                     margin: .5rem .25rem .8rem .25rem;
                 }
                 .icon-box-description {
-                    font-size: 1.2rem;
-                    width: 100%;
+                    font-size: .8rem;
+                    width: 80%;
                 }
             }
             .b, .d {
@@ -1280,10 +1342,10 @@ header {
             }
 
             .block h2{
-                font-size: 24px;
+                font-size: 1.4rem;
             }
             .block p{
-                font-size: 24px;
+                font-size: 1.4rem;
             }
 
             .feature {
@@ -1294,39 +1356,44 @@ header {
             }
 
             .feature h3 {
-                font-size: 22px;
+                font-size: 1.2rem;
             }
             .feature p {
-                font-size: 14px;
-                line-height: 150%;
+                font-size: .9rem;
+                line-height: 130%;
             }
         }
 
         .stats-section {
             padding: 15px 5px;
             gap: 5px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
         }
 
         .stat-item {
-            min-width: 80px;
+            min-width: 3rem;
+            height: 3rem;
             text-align: center;
         }
 
         .stat-number {
-            font-size: .9rem;
+            font-size: .6rem;
         }
 
         .stat-description {
-            font-size: .6rem;
+            font-size: .4rem;
         }
     }
 
     .projects {
+        padding: 0;
+        margin: 0;
         .project-card {
             display: block;
             border: none;
+            margin: 0;
+            padding: 2rem;
 
             .project-image-wrapper {
                 .project-image {
@@ -1342,7 +1409,7 @@ header {
 
 
                 .project-title {
-                    font-size: 0.9rem;
+                    font-size: 0.6rem;
                 }
 
                 .project-tags {
@@ -1353,23 +1420,26 @@ header {
 
                     .tag {
                         padding: 8px 15px 8px 10px;
-                        font-size: 13px;
+                        font-size: .7rem;
                         margin-bottom: 0.25rem;
                     }
                 }
 
                 .project-description {
-                    font-size: 0.9rem;
+                    font-size: 0.7rem;
                     line-height: 150%;
                     margin-bottom: 1.5rem;
                 }
+
+                .btn-outlined {
+                    border-radius: 99px;
+                    font-size: .7rem;padding: .5rem 1rem;
+                } 
             }
         }
     }
 
     .footer-content {
-        padding: 0;
-        flex-direction: column;
 
         .footer-left, .footer-right {
             padding: 1rem;
@@ -1377,11 +1447,46 @@ header {
         }
 
         .footer-left {
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
             .contact-item {
                 margin-bottom: 1rem;
                 margin-left: 0;
                 h2 {
+                    font-size: 1.2rem;
                     margin-bottom: 0.5rem;
+                }
+
+                p {
+                    font-size: .6rem;
+                }
+            }
+
+            .btn {
+                padding: .5rem 1rem;
+                font-size: .7rem;
+            }
+        }
+
+        .footer-right {
+            padding: 0;
+    
+            .column {
+                margin-left: 2rem;
+    
+                li {
+                    font-size: .6rem;
+                    margin-bottom: .5rem;
+                    text-align: left;
+                }
+    
+                h3 {
+                    text-align: left;
+                    font-size: 1rem;
+                    margin-bottom: 1.5rem;
                 }
             }
         }

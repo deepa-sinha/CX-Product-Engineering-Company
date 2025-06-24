@@ -986,6 +986,13 @@ header .bottom-section .brand-section .brand {
   }
 }
 @media (max-width: 500px) {
+  nav .logo {
+    padding-top: 0;
+  }
+  nav .logo img {
+    width: 5rem;
+    height: 2.5rem;
+  }
   header {
     padding: 0;
     display: flex;
@@ -997,7 +1004,7 @@ header .bottom-section .brand-section .brand {
     padding: 2rem 0 2rem 1rem;
   }
   header .header-left h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   header .header-left h1 span {
     width: 3rem;
@@ -1005,7 +1012,7 @@ header .bottom-section .brand-section .brand {
     padding: 0.15rem;
   }
   header .header-left h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
   header .header-left .btn-wraper {
     flex-direction: column-reverse;
@@ -1015,15 +1022,20 @@ header .bottom-section .brand-section .brand {
   header .header-left .btn-wraper h2 {
     font-size: 1.5rem;
   }
+  header .header-left .btn-wraper .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
   header .header-right {
-    flex: 1;
-    padding-right: 1rem;
+    width: 100%;
+    scale: 0.8;
   }
   header .reviews {
     width: 100%;
     justify-content: center;
-    margin-top: -30px;
+    margin-top: 2rem;
     padding-right: 1rem;
+    gap: 1rem;
   }
   header .reviews img {
     width: 2rem;
@@ -1042,15 +1054,46 @@ header .bottom-section .brand-section .brand {
   header .bottom-section .brand-section {
     margin-top: 1.5rem;
     width: 100%;
+    flex-wrap: wrap;
   }
   header .bottom-section .brand-section .brand {
-    flex: 1;
+    height: 3rem;
   }
   header .bottom-section .brand-section .brand img {
     width: 50%;
   }
+  .sub-heading {
+    width: 20rem;
+    height: 2.5rem;
+  }
+  .sub-heading .heading-left {
+    font-size: 1.5rem;
+  }
+  .sub-heading .circle {
+    width: 2.4rem;
+    height: 2.3rem;
+    padding: 0;
+    margin: 0.1rem 0.1rem;
+  }
+  .sub-heading .circle svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .services {
+    margin-top: 2.5rem;
+  }
   .services .services-content {
-    padding: 2rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .services .services-content .accordions .accordion-products .product-heading h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .services .services-content .accordions .accordion-products .product-description {
+    font-size: 0.7rem;
+    line-height: 116%;
   }
   .services .services-content .accordions-img {
     display: none;
@@ -1058,30 +1101,34 @@ header .bottom-section .brand-section .brand {
   .growth .icon-box-container {
     padding: 2rem 1rem 1rem 2rem;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+  }
+  .growth .icon-box-container .icon-box-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
   }
   .growth .icon-box-container .icon-box-wrapper .icon-box-num {
-    font-size: 3.5rem;
-    transform: rotateX(30deg) rotateY(310deg) rotateZ(345deg) translate3d(-30px, 60px, 15px);
+    font-size: 2.5rem;
+    transform: rotateX(30deg) rotateY(337deg) rotateZ(345deg) translate3d(-14px, -52px, 8px);
   }
   .growth .icon-box-container .icon-box-wrapper .icon-box-holder {
-    width: 12rem;
-    height: 12rem;
+    width: 7rem;
+    height: 7rem;
   }
   .growth .icon-box-container .icon-box-wrapper .icon-box-holder svg {
-    width: 5rem;
+    width: 3rem;
   }
   .growth .icon-box-container .icon-box-wrapper .icon-box-heading {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .growth .icon-box-container .icon-box-wrapper .icon-line {
-    width: 90%;
-    height: 2px;
+    width: 20%;
+    height: 1px;
     margin: 0.5rem 0.25rem 0.8rem 0.25rem;
   }
   .growth .icon-box-container .icon-box-wrapper .icon-box-description {
-    font-size: 1.2rem;
-    width: 100%;
+    font-size: 0.8rem;
+    width: 80%;
   }
   .growth .icon-box-container .b, .growth .icon-box-container .d {
     margin-top: 0;
@@ -1095,41 +1142,48 @@ header .bottom-section .brand-section .brand {
     margin-bottom: 2rem;
   }
   .positivity .feature-blocks-container .block h2 {
-    font-size: 24px;
+    font-size: 1.4rem;
   }
   .positivity .feature-blocks-container .block p {
-    font-size: 24px;
+    font-size: 1.4rem;
   }
   .positivity .feature-blocks-container .feature svg {
     width: 40px;
     height: 40px;
   }
   .positivity .feature-blocks-container .feature h3 {
-    font-size: 22px;
+    font-size: 1.2rem;
   }
   .positivity .feature-blocks-container .feature p {
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 0.9rem;
+    line-height: 130%;
   }
   .positivity .stats-section {
     padding: 15px 5px;
     gap: 5px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
   }
   .positivity .stat-item {
-    min-width: 80px;
+    min-width: 3rem;
+    height: 3rem;
     text-align: center;
   }
   .positivity .stat-number {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   .positivity .stat-description {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
+  }
+  .projects {
+    padding: 0;
+    margin: 0;
   }
   .projects .project-card {
     display: block;
     border: none;
+    margin: 0;
+    padding: 2rem;
   }
   .projects .project-card .project-image-wrapper .project-image {
     width: 100%;
@@ -1142,7 +1196,7 @@ header .bottom-section .brand-section .brand {
     padding-left: 1rem;
   }
   .projects .project-card .project-content .project-title {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   .projects .project-card .project-content .project-tags {
     margin-bottom: 0.5rem;
@@ -1152,27 +1206,56 @@ header .bottom-section .brand-section .brand {
   }
   .projects .project-card .project-content .project-tags .tag {
     padding: 8px 15px 8px 10px;
-    font-size: 13px;
+    font-size: 0.7rem;
     margin-bottom: 0.25rem;
   }
   .projects .project-card .project-content .project-description {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 150%;
     margin-bottom: 1.5rem;
   }
-  .footer-content {
-    padding: 0;
-    flex-direction: column;
+  .projects .project-card .project-content .btn-outlined {
+    border-radius: 99px;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
   }
   .footer-content .footer-left, .footer-content .footer-right {
     padding: 1rem;
     text-align: center;
+  }
+  .footer-content .footer-left h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   .footer-content .footer-left .contact-item {
     margin-bottom: 1rem;
     margin-left: 0;
   }
   .footer-content .footer-left .contact-item h2 {
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+  }
+  .footer-content .footer-left .contact-item p {
+    font-size: 0.6rem;
+  }
+  .footer-content .footer-left .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  .footer-content .footer-right {
+    padding: 0;
+  }
+  .footer-content .footer-right .column {
+    margin-left: 2rem;
+  }
+  .footer-content .footer-right .column li {
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  .footer-content .footer-right .column h3 {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
